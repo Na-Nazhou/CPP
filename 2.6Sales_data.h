@@ -7,8 +7,9 @@
 // #iddef is true if the variable has been defined
 // processed uup to the matching #endif
 // preprocessor variables must be unique throughout the program
-// header should not include using declarations 
+// header should not include using declarations
 
+#include <iostream>
 #include <string>
 
 // headers usually contain: class definitions and const and constexpr variables
