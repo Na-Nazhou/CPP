@@ -6,7 +6,7 @@ int main() {
     std::cin >> item1 >> item2; //read a pair of transactions
     // first check that item1 and item2 represent the same book
     if (item1.isbn() == item2.isbn()) {
-        std::cout <<item1 + item2 << std::endl; //print their sum
+        std::cout << item1 + item2 << std::endl; //print their sum
         return 0; // indicate success
     } else {
         std::cerr << "Data must refer to same ISBN"
@@ -15,3 +15,10 @@ int main() {
     }
     return 0;
 }
+
+// input:
+// 0-201-78345-X 3 20.00
+// 0-201-78345-X 2 25.00
+
+// output:
+// 0-201-78345-X 5 110 22

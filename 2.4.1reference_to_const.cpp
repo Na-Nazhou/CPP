@@ -37,5 +37,6 @@ int main() {
     // compilor transformation:
     const int temp = dval; // create a temporary const int from the double
     const int &ri = temp; // bind ri to that temporary
-    // reference to const restricts only what we can do through that reference 
+    // reference to const restricts only what we can do through that reference
+    return 0;
 }

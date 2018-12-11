@@ -18,19 +18,19 @@ int main() {
     //int &refVal5 = dval; error: initializer must be an int object
 
 // ***********************************************************************
-    int ip1, ip2; // both ip1 and ip2 are pointers to int
-    double dp, *dp2; // dp2 is a pointer to double; dp is a double
-    int *p = &ival; // p holds the address of ival; p is a pointer to ival
-    // defines p as a pointer to int and initializes p to point to the int boject named ival
-    cout << *p; // * yields the object to which p points; prints 42
-    *p = 0; // * yields the object; assign a new vlaue to ival through p
-    cout << *p; // prints 0
-
     double dval;
     double *pd = &dval; // initializer is the address of a double
     double *pd2 = pd; // initializer is a pointer to a double
     // int *pi = pd; error: types of pi and pd differ, initializer must be an int object
     // pi = &dval; error: assigning the address of a double to a pointer to int
+
+    int ip1, ip2; // both ip1 and ip2 are pointers to int
+    double dp, *dp2; // dp2 is a pointer to double; dp is a double
+    int *p = &ival; // p holds the address of ival; p is a pointer to ival
+    // defines p as a pointer to int and initializes p to point to the int boject named ival
+    std::cout << *p; // * yields the object to which p points; prints 42
+    *p = 0; // * yields the object; assign a new vlaue to ival through p
+    std::cout << *p; // prints 0
 
     // to obtain a null pointer:
     int *p1 = nullptr; // use literal nullptr
@@ -53,5 +53,5 @@ int main() {
     void *pv = &obj; // obj can be an object of any type
     pv = pd; // pv can hold a pointer to any type
     // cannot use a void* to operate on the object it addresses
-
+    return 0;
 }

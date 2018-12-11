@@ -22,7 +22,5 @@ int main() {
         errorHandler();
         *curErr = 0; // rest the value of the object to which currErr is bound
     }
-
-    // when we copy an object, top-level consts are ignored
-    // on the other hand, low-leve const is never ignored      
+    return 0;
 }

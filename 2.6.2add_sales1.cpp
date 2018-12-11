@@ -14,14 +14,22 @@ int main() {
         double totalRevenue = data1.revenue + data2.revenue;
         // print: ISBN, total sold, total revenue, average price per book
         std::cout << data1.bookNo << " " << totalCnt << " " << totalRevenue << " ";
-        if (totalCnt != 0)
+        if (totalCnt != 0) {
             std::cout << totalRevenue/totalCnt << std::endl;
-        else
+        } else {
             std::cout << "(no sales)" << std::endl;
+        }
         return 0; // indicate success
     } else { // transactions weren't for the same ISBN
         std::cerr << "Data must refer to the same ISBN" << std::endl;
-        return -1; // indicate failure 
+        return -1; // indicate failure
     }
 
 }
+
+// input:
+// 0-201-78345-X 3 20.00
+// 0-201-78345-X 2 25.00
+
+// output:
+// 0-201-78345-X 5 110 22

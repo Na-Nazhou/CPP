@@ -1,4 +1,6 @@
 #include <iostream>
+// base type + a list of declarators
+// each declarator names a variable and gives the variable a type that is related to the base type
 
 int main() {
     int i = 1024, *p = &i, &r = i;
@@ -21,5 +23,6 @@ int main() {
     int *p; // p is a poiter to int
     int *&r = p; // r is a reference to the pointer (r is another name for pointer p)
     r = &i; // r refers to a pointer; assigning &i to r makes p point to i
-    // r is a reference to a pointer to an int 
+    // r is a reference to a pointer to an int
+    return 0;
 }

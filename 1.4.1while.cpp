@@ -1,4 +1,5 @@
 #include <iostream>
+// return the sum from 1 to 10
 
 int main() {
     int sum = 0, val = 1;
@@ -7,7 +8,6 @@ int main() {
         sum += val; //assign sum + val to sum
         ++val; //add 1 to val
     }
-    std::cout << "Sum of 1 to 10 inclusive is "
-        <<sum << std::endl;
+    std::cout << "Sum of 1 to 10 inclusive is "<<sum << std::endl;
     return 0;
 }
